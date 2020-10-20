@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="5dp"
+    android:background="@android:color/background_light">
+
+    <TextView
+        android:id="@+id/question_one_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Question 1"
+        android:textSize="30sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_one_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/radiobutton_option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 1"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 2"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 3"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_option4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 4"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_option5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 5"
+            android:textSize="24sp" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/next_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/radio_group1"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Next"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+
+</RelativeLayout>

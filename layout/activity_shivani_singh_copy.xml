@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@android:color/background_light"
+    tools:context=".SchedulesActivity.ShivaniSinghCopy">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/shivani_singh_copy_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Schedules"
+        app:titleTextColor="#FFFFFF" />
+
+    <!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="60dp">
+        -->
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/schedule_recylerview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/shivani_singh_copy_toolbar"
+        android:layout_marginTop="0dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

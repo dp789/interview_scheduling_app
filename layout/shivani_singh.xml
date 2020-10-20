@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/shivani_singh_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Schedules"
+        app:titleTextColor="#FFFFFF" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/schedule_recylerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/shivani_singh_toolbar">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/fab2"
+        android:layout_gravity="center"
+        android:background="@android:color/background_light"
+        android:src="@drawable/ic_add_black_24dp"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal"
+        tools:ignore="RelativeOverlap" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/card_id1"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/background_light"
+        android:src="@drawable/ic_remove_black_24dp"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal" />
+
+
+</RelativeLayout>

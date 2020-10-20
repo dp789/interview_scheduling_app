@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity.LoginActivity"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <FrameLayout
+        android:id="@+id/InternityWallpaper_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:background="@android:color/background_light">
+
+        <ImageView
+            android:id="@+id/Internity_Wallpaper"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="40dp"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/InternityLogin_framelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4.5"
+        android:background="@drawable/app_background1">
+
+        <EditText
+            android:id="@+id/Login_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Username"
+            android:inputType="text"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/Login_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/Login_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/Login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Login_password"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:text="Log In" />
+
+        <TextView
+            android:id="@+id/Student_register_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Login_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:onClick="StudentRegisterMethod"
+            android:text="For Student, Register Here!"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
